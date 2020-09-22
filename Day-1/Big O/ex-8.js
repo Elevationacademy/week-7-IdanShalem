@@ -3,8 +3,7 @@
 const findIndex = (numbers, num) => {
     let start = 0,
         end = numbers.length -1,
-        middle = 0,
-        counter = 0
+        middle = 0
     while (start <= end){
         middle = Math.round((end + start) / 2)
         if(numbers[middle] === num){
