@@ -18,7 +18,7 @@ class Stack {
     pop(){
         if(this.length !== 0){
             this.length--
-            return delete this.stack[this.length]
+            return this.stack.splice(this.length, 1)[0]
         }
         return null
     }
