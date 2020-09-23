@@ -12,9 +12,8 @@ const findFactorial = function() {
 }
 
 //Exercise 2
-const reverseString = function() {
-    let reversed = str.length === 0 ? "" : reverse(str.substr(1)) + str.charAt(0)
-    return reversed
+const reverseString = function(str) {
+    return str === "" ? "" : reverseString(str.substr(1)) + str.charAt(0)
 }
 
 //Exercise 3
@@ -33,8 +32,5 @@ const swap = function(s1, s2) {
   swap(s1, s2)
 }
 
-swap(s1, s2)
-s1.print() //[]
-s2.print() //[1, 2, 3]
-/* DO NOT REMOVE THE EXPORTS BELOW */
+console.log(reverseString('dog'))
 module.exports = { findFactorial, reverseString, swap }
