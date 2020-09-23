@@ -69,7 +69,6 @@ dq.enqueue(1, 1)
 dq.enqueue(1, 1)
 dq.enqueue(1, 1)
 dq.enqueue(1, 1)
-dq.enqueue(1, 1)
 
 console.log(dq.getLongestQueue()) //Queue { queue: [ 1, 1, 1, 1, 1, 1, 1 ] }
 console.log(dq.getShortestQueue()) //Queue { queue: [ 2, 2 ] }
