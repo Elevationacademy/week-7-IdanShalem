@@ -3,16 +3,17 @@ class Matrix {
 
     constructor(rowNums, colNums) {
         this.matrix = this.generateMatrix(rowNums, colNums)
+        this.rowNums = rowNums
+        this.colNums = colNums
     }
 
     generateMatrix(rowNums, colNums) {
-        let   matrix = [],
-                counter = 1
+        let   matrix = []
 
         for(let r = 0; r < rowNums; r++) {
             matrix.push([])
             for(let c = 0; c < colNums; c++){
-                matrix[r].push(counter++)
+                matrix[r].push('.')
             }
         }
 
